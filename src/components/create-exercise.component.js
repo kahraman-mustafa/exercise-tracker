@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-export default class CreateExercise extends Component {
+class CreateExercise extends Component {
 
   constructor(props){
     super(props);
@@ -20,14 +20,6 @@ export default class CreateExercise extends Component {
       date: new Date(),
       users: []
     }
-  }
-
-  state = {
-    username: '',
-    descripton: '',
-    duration: 0,
-    date: new Date(),
-    users: []
   }
 
   componentDidMount() {
@@ -119,3 +111,5 @@ export default class CreateExercise extends Component {
   }
 
 }
+
+export default CreateExercise;
